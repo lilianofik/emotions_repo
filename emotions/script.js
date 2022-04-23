@@ -75,34 +75,34 @@ let statusIcons = {
   }
 
 //big care
-let getAvatar = (mood) => {
+// let getAvatar = (mood) => {
 
-    // console.log(mood);
-     if (mood[0] > 0.6 || mood[0] >= 1) {
+//     // console.log(mood);
+//      if (mood[0] > 0.6 || mood[0] >= 1) {
       
-        // if(`${mood[1]}-female)`) {
+//         // if(`${mood[1]}-female)`) {
 
-            $$('.img-avatar').forEach(i => {
+//             $$('.img-avatar').forEach(i => {
                 
-            if (i.classList[1] === `${mood[1]}-female`) {
+//             if (i.classList[1] === `${mood[1]}-female`) {
 
-                console.log(`${i.classList[1]} ${mood[1]}-female`);
+//                 console.log(`${i.classList[1]} ${mood[1]}-female`);
 
-                i.style.display = 'block';
-            } else {
-                i.style.display = 'none';
-            }
-            });
-    }
+//                 i.style.display = 'block';
+//             } else {
+//                 i.style.display = 'none';
+//             }
+//             });
+//     }
   
-  };
+//   };
 
 function drawBorders() {
 
     const canvas = faceapi.createCanvasFromMedia($('#video'));
     
     const displaySize = {width: $('#video').width, height: $('#video').height};
-    $('#face').append(canvas);
+    $('#wrapper').append(canvas);
 
     faceapi.matchDimensions(canvas, displaySize);
 
