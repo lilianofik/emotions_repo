@@ -20,17 +20,16 @@ body {
     color: white;
     font-size: 300%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 35%;
     padding: 0;
     margin-top: 2%;
-    margin-left: 1%;
-    float: left;
+    margin-left: 2%;
   }
 
   #face{
+    display: inline-block;
     position: relative;
     top: 30px;
-    left: 34%;
+    left: 10%;
   }
 canvas {
     position: absolute;
@@ -41,13 +40,14 @@ canvas {
 
 #current_emotion{
   position: relative;
-  left: 8%;
-  top: 30px;
-  background-image: linear-gradient(45deg,blue 30%, red);
+  left: 30%;
+  max-width: 500px;
+  max-height: 500px;
+  /* background-image: linear-gradient(45deg,blue 30%, red);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 /* 
  #face {

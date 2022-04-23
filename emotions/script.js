@@ -134,7 +134,7 @@ function drawBorders() {
                 }
               }
               
-                $('#current_emotion').src = `./images/${status}.svg`;
+                $('#current_emotion').src = `./images2/${status}.png`;
 
                 if(status === "happy") $('#test').style.display = 'block';
                 else $('#test').style.display = 'none';
