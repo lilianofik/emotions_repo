@@ -1,11 +1,19 @@
 body {
     margin: 0;
-    background-image: linear-gradient(45deg,red, blue);
+    /* background-image: linear-gradient(45deg,red, blue); */
+    background-color: blue;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
+    animation: gradient 5s ease-in infinite alternate;
+  }
+
+  @keyframes gradient{
+    100%{
+      background-color: red;
+    }
   }
 
   #welcomeMsg{
