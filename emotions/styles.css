@@ -2,10 +2,22 @@ body {
     margin: 0;
   }
 
+  #face{
+    position: relative;
+    top: 25%;
+    left: 25%;
+  }
 canvas {
     position: absolute;
     top: 0;
     left: 0;
+    padding: 0;
+    border: dotted red 5px;
+}
+
+#current_emotion{
+  position: relative;
+  left: 40%;
 }
 /* 
  #face {

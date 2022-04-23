@@ -97,13 +97,12 @@ let getAvatar = (mood) => {
   
   };
 
-
 function drawBorders() {
 
     const canvas = faceapi.createCanvasFromMedia($('#video'));
     
     const displaySize = {width: $('#video').width, height: $('#video').height};
-    document.body.append(canvas);
+    $('#face').append(canvas);
 
     faceapi.matchDimensions(canvas, displaySize);
 
@@ -116,8 +115,6 @@ function drawBorders() {
         const resizedDetections = faceapi.resizeResults(detections, displaySize);
 
         canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
-
-        
 
         faceapi.draw.drawDetections(canvas, resizedDetections);
         faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
