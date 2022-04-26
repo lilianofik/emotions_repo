@@ -16,10 +16,10 @@ window.onload = () => {
 
     Promise.all([
 
-        faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-        faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
-        faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
-        faceapi.nets.faceExpressionNet.loadFromUri('/models')
+        faceapi.nets.tinyFaceDetector.loadFromUri('./models'),
+        faceapi.nets.faceLandmark68Net.loadFromUri('./models'),
+        faceapi.nets.faceRecognitionNet.loadFromUri('./models'),
+        faceapi.nets.faceExpressionNet.loadFromUri('./models')
 
     ]).then(startVideo());
 
@@ -74,28 +74,6 @@ let statusIcons = {
     surprised: '😳'
   }
 
-//big care
-// let getAvatar = (mood) => {
-
-//     // console.log(mood);
-//      if (mood[0] > 0.6 || mood[0] >= 1) {
-      
-//         // if(`${mood[1]}-female)`) {
-
-//             $$('.img-avatar').forEach(i => {
-                
-//             if (i.classList[1] === `${mood[1]}-female`) {
-
-//                 console.log(`${i.classList[1]} ${mood[1]}-female`);
-
-//                 i.style.display = 'block';
-//             } else {
-//                 i.style.display = 'none';
-//             }
-//             });
-//     }
-  
-//   };
 
 function drawBorders() {
 
