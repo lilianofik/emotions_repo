@@ -10,7 +10,7 @@ let happy = '';
 let surprised = '';
 let disgusted = '';
 let fearful = '';
-let sad = '';
+let sad = '';   
 
 window.onload = () => {
 
@@ -102,7 +102,7 @@ function drawBorders() {
     const canvas = faceapi.createCanvasFromMedia($('#video'));
     
     const displaySize = {width: $('#video').width, height: $('#video').height};
-    $('#wrapper').append(canvas);
+    $('#face').append(canvas);
 
     faceapi.matchDimensions(canvas, displaySize);
 
